@@ -1,0 +1,55 @@
+# Assets - keep only cardiac.mp4
+assets/*
+!assets/cardiac.mp4
+
+# Data folders
+data/
+davis2017/
+
+# Demo output - keep only .mp4 files
+demo_output/*
+!demo_output/*.mp4
+
+# Outputs folder
+outputs/
+B0_ours/
+B2_ours/
+compare_vis/
+inference_ytvos.py
+
+# Pretrain - keep only specific models
+pretrain/*
+!pretrain/final_model_camus_a6000_exp_warmup.pth/
+!pretrain/final_model_camus_B0_ours.pth/
+!pretrain/final_model_camus_B0_paper.pth/
+!pretrain/final_model_camus_B2_paper.pth/
+
+# Specific files to ignore
+debugging_cme.py
+inference_mevis.py
+inference_ytos.py
+patient_eval.ipynb
+test.ipynb
+
+# Common Python ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.venv/
+env/
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
